@@ -1345,7 +1345,7 @@ a:hover { border-bottom-color: transparent; color: #18bfef !important; }
 /* Mobile background (override for smaller screens) */
 @media (max-width: 768px) {
     #wrapper > .bg {
-        background-image: url("/images/bg.png"), 
+        background-image: url("../../images/bg.png"), 
                           linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
         background-size: cover, cover;
         background-position: center, center;
