@@ -2695,15 +2695,33 @@ a:hover { border-bottom-color: transparent; color: #18bfef !important; }
 
 @media screen and (max-width: 500px) {
   .tiles {
-    margin: 0;  /* remove outer spacing */
+    margin: 0; /* remove outer spacing */
   }
 
   .tiles article {
-    width: 100% !important;   /* full width */
-    margin: 1.25em 0 0 0;     /* vertical spacing between tiles */
-    padding-left: 0.5rem;     /* optional: reduce inner padding */
-    padding-right: 0.5rem;
-    box-sizing: border-box;    /* ensure padding doesn’t break layout */
+    width: 100% !important;      /* full width */
+    margin: 1em 0 0 0 !important; /* vertical spacing */
+    padding: 0 0.5rem !important; /* left & right padding */
+    box-sizing: border-box !important; /* include padding in width */
+  }
+}
+
+/* Tablets and larger phones (481px – 736px) */
+@media screen and (min-width: 481px) and (max-width: 736px) {
+  .tiles article {
+    width: calc(50% - 1.25em);  /* 2-column layout */
+    margin: 1.25em 0 0 1.25em;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+/* Mobile devices ≤480px Intro Banner*/
+@media screen and (max-width: 480px) {
+  #intro {
+    height: auto;          /* allow height to adjust to content */
+    min-height: 50vh;      /* optional: set a smaller minimum */
+    padding: 2rem 1rem;    /* reduce top/bottom spacing */
   }
 }
 
