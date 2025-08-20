@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Mezze Muezza</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><img src="images/mezzemuezzalogo.png" alt="MEZZE MUEZZA Logo" height = "100";></a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html"> ABOUT </a></li>
+							<li class="active"><a href="BookUs.html">BOOK US</a></li>
+							<li><a href="https://mezzemuezza.square.site/">MENU</a></li>
+						</ul>
+						<ul class="icons">
+									<li><a href="https://www.facebook.com/mezzemuezza/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/mezzemuezza/?hl=en" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+					</nav>
+					
+					<script>
+					// Add active class to the current button (highlight it)
+					var header = document.getElementById("nav");
+					var btns = header.getElementsByClassName("btn");
+					for (var i = 0; i < btns.length; i++) {
+					  btns[i].addEventListener("click", function() {
+					  var current = document.getElementsByClassName("active");
+					  current[0].className = current[0].className.replace(" active", "");
+					  this.className += " active";
+					  });
+					}
+					</script>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>CATERING<h1>
+
+					
+												<section class="tiles">
+								<article class="style1">
+									<span class="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+								<a>
+									<h2>MEZZE PLATTER</h2>
+									<p class="price">$118</p>
+									<div class="content">
+										<p>
+											Caters 8 - 10 people<br>
+											4 Traditional chicken tacos<br>
+											4 Signature cauliflower tacos<br>
+											4 Hummus falafel tacos<br>
+											4 Arabian chicken rice cups<br>
+											4 Arabian vegetarian rice cups<br>
+											8 Small Tzatziki dips
+										</p>
+									</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+									<a>
+										<h2>MEZZE MUEZZA BOX</h2>
+									<p class="price">$145</p>
+									<div class="content">
+											<p>	Caters 8 - 10 people<br>
+										4 Traditional chicken tacos<br>
+										4 Signature cauliflower tacos<br>
+										4 Hummus falafel tacos<br>
+										4 Arabian chicken rice cups<br>
+										4 Arabian vegetarian rice cups<br>
+										8 Small Tzakiki dips
+									</p>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+									<a >
+										<h2>MUEZZA SIGNATURE BOX</h2>
+										<p class="price">$179</p>
+										<div class="content">
+										
+										<p>Caters 8 - 10 people <br>
+										6 Traditional chicken tacos <br>
+										6 Signature cauliflower tacos<br>
+										4 Arabian nacho bowls<br>
+										10 Small kebab spring rolls<br>
+										10 Small Tzakiki dips <br>
+									</p>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+									<a href="#Catering">
+										<h2>CUSTOM PACKAGE</h2>
+										<p class="price">Request a quote</p>
+										<div class="content">
+										
+										
+										<p>Tailored menu and food truck hire options available.</p>
+										</div>
+									</a>
+								</article>
+								
+																<!-- Quote Form UNDER the grid -->
+
+								<div class="catering-form">
+								  <h3>Request a Quote</h3>
+								<form action="https://api.web3forms.com/submit" method="POST">
+									<!-- Web3Forms Access Key -->
+									<input type="hidden" name="access_key" value="31cbf087-6bb1-4d93-b095-902fcfbb4578">
+
+									<div class="fields">
+										<div class="field">
+											<label for="Subject">Choose an option:</label>
+											<select id="Subject" name="Subject">
+												<option value="Private Catering">Private Catering</option>
+												<option value="Food Truck Hire">Food Truck Hire</option>
+												<option value="Other Enquiries">Other Enquiries</option>
+											</select>
+										</div>
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" required />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="email" name="email" id="email" required />
+										</div>
+
+										
+										<div class="field half">
+										<label for="Location">Location</label>
+										<input type="text" id="Location" name="Location" placeholder="Enter your event location" required>
+										</div>
+
+
+										<div class="field half">
+											<label for="event-date">Select Date:</label>
+											<input type="date" id="event-date" name="event-date" required>
+										</div>
+										<div class="field ">
+											<label for="message">Additional Details</label>
+											<textarea name="message" id="message" rows="4" required></textarea>
+										</div>
+
+									</div>
+
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								</div>
+
+							</section>
+						</div>
+					</div>
+					</div>
+
+
+				<!-- Footer Contact Us form-->
+					<footer id="footer">
+
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>77 Marston drive<br />
+								Morphett Vale, SA 5162</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">mezzemuezza@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.facebook.com/mezzemuezza/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/mezzemuezza/?hl=en" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								</ul>
+							</section>
+
+						</section>
+					</footer>
+
+				<!-- Footer -->
+					<div id="copyright">
+						<ul><li>Trading HOURS</li><li>Saturday 5:00PM- 8:30PM</li><li>Sunday 5:00PM- 8:00PM</li><li>Monday 5:00PM- 8:00PM</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
