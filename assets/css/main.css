@@ -2693,18 +2693,19 @@ a:hover { border-bottom-color: transparent; color: #18bfef !important; }
 
 		}
 
-		@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
+  .tiles {
+    margin: 0;  /* remove outer spacing */
+  }
 
-			.tiles {
-				margin: 0;
-			}
-
-				.tiles article {
-					width: 100%;
-					margin: 1.25em 0 0 0;
-				}
-
-		}
+  .tiles article {
+    width: 100% !important;   /* full width */
+    margin: 1.25em 0 0 0;     /* vertical spacing between tiles */
+    padding-left: 0.5rem;     /* optional: reduce inner padding */
+    padding-right: 0.5rem;
+    box-sizing: border-box;    /* ensure padding doesn’t break layout */
+  }
+}
 
 /*Catering Form */
 
