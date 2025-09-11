@@ -2566,14 +2566,14 @@ a:hover { border-bottom-color: transparent; color: #18bfef !important; }
 }
 /* Tile Header Font size*/
 .tiles article p {
-  font-size: 3em;          /* readable size */
+  font-size: 2em;          /* readable size */
   line-height: 1.6 ;        /* even vertical spacing */
   margin: 0 0 0.6em 0;     /* spacing below paragraph */
   text-align: left;        /* aligns nicely in block */
   color: black;
 }
 				.tiles article > a h2 {
-					 font-size: 2em !important;
+					 font-size: 1.5em !important;
 					 line-height: 1.2 !important;
 					 margin-bottom: 0.1em;
 					margin: 0;
@@ -2658,7 +2658,7 @@ a:hover { border-bottom-color: transparent; color: #18bfef !important; }
 		}
 
 		body.is-touch .tiles article .content {
-			max-height: 15em;
+			max-height: 25em;
 			opacity: 1;
 		}
 
@@ -2715,7 +2715,7 @@ a:hover { border-bottom-color: transparent; color: #18bfef !important; }
 
   .tiles article {
     width: 100% !important;      /* full width */
-    margin: 1em 0 0 0 !important; /* vertical spacing */
+    margin: 2em 0 0 0 !important; /* vertical spacing */
     padding: 0 0.5rem !important; /* left & right padding */
     box-sizing: border-box !important; /* include padding in width */
   }
