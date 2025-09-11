@@ -2561,21 +2561,19 @@ a:hover { border-bottom-color: transparent; color: #18bfef !important; }
 				/*Tile font*/
 				.tiles article > a .price {
     margin: 0 0 0.3em 0;   /* space between price and content */
-    color: white;
-    font-size: 0.5em;
+    color: black;
+    font-size: 1em;
 }
-
-
 /* Tile Header Font size*/
 .tiles article p {
-  font-size: 1em;          /* readable size */
+  font-size: 3em;          /* readable size */
   line-height: 1.6 ;        /* even vertical spacing */
   margin: 0 0 0.6em 0;     /* spacing below paragraph */
   text-align: left;        /* aligns nicely in block */
   color: black;
 }
 				.tiles article > a h2 {
-					 font-size: 0.5em !important;
+					 font-size: 2em !important;
 					 line-height: 1.2 !important;
 					 margin-bottom: 0.1em;
 					margin: 0;
