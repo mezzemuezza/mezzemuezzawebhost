@@ -2708,24 +2708,30 @@ a:hover { border-bottom-color: transparent; color: #18bfef !important; }
 
 		}
 
+/* Make tiles expand with content and prevent overlap */
+.tiles article {
+    overflow: visible;       /* allow content to expand beyond image */
+    margin-bottom: 2em;      /* extra spacing to next row */
+}
+
+/* On mobile, full width and proper spacing */
 @media screen and (max-width: 500px) {
   .tiles {
-    margin: 0; /* remove outer spacing */
+    margin: 0;
   }
-
   .tiles article {
     width: 100% !important;      /* full width */
-    margin: 2em 0 0 0 !important; /* vertical spacing */
-    padding: 0 0.5rem !important; /* left & right padding */
-    box-sizing: border-box !important; /* include padding in width */
+    margin: 2em 0 0 0 !important; /* top spacing */
+    padding: 0 0.5rem !important;
+    box-sizing: border-box !important;
   }
 }
 
-/* Tablets and larger phones (481px – 736px) */
+/* Tablet / small screens: keep 2-column layout with spacing */
 @media screen and (min-width: 481px) and (max-width: 736px) {
   .tiles article {
-    width: calc(50% - 1.25em);  /* 2-column layout */
-    margin: 1.25em 0 0 1.25em;
+    width: calc(50% - 1.25em);
+    margin: 1.25em 0 2em 1.25em; /* top + bottom spacing to prevent overlap */
     padding: 0;
     box-sizing: border-box;
   }
